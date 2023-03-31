@@ -1,78 +1,104 @@
-<center>  <h1> BrainTumorDetection_DL_MathModelling </h1>
-</center>
+# Deep-Tumor-Insight
 
-## Table of contents
-* [Information](#information)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Poster](#poster)
-* [Notebook](#notebook)
-* [Report](#report)
-* [Presentation](#presentation)
-* [Team](#team)
+## Table of Contents
+- [Project](#project)
+- [Information](#information)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Poster](#poster)
+- [Notebook](#notebook)
+- [Report](#report)
+- [Presentation](#presentation)
+- [Team](#team)
 
 <hr>
 
+## Project
+
+1. Data Exploration
+- The Brain Tumor Detection 2020 Kaggle dataset, consisting of 3065 MRI images separated into two classes (Tumor – Non-Tumor) brain, was used.
+
+2. Data Analysis
+- cv2.COLOR_RGB2LAB was used to apply equalization histogram to perceptual lightness.
+- Analysis of histograms indicated that the affected brains had much more perceptual lightness intensity.
+
+3. CNN Model
+- The model included mainly 3 Conv2D layers with maxpooling and ReLU activation functions, followed by Flatten, Dense, Activation, Dropout, Dense and Activation layers.
+
+4. Model Training
+ - Binary crossentropy loss function was used for binary classification.
+- Adam optimizer, a stochastic gradient descent optimization algorithm, was chosen to train the deep learning model as it can handle sparse gradients on noisy problems.
+
+5. Model Evaluation
+- The model achieved a validation accuracy of 97% which indicates its potential for detecting brain tumors accurately.
+ 
+
 ## Information
-- The project Back-end is made using Deep learning (Python). <br>
-> General Information
-- This project is Mathematical Modelling of Detection of Brain Tumor which was required by our college to further join a comptetion where our team pirates got the 2nd place in it.
-  - The content of this project will include:
-    - Poster which illustrate our full project
-    - Implementing our algorithm using Deep Learning to detect brain tumor in jupyter notebook (Accuracy 97%)
-    - Report which descirbe the full research process
+
+- The project Back-end is made using Deep learning (Python).
+General Information
+
+- This project is Mathematical Modeling using PDEs for Detection of Brain Tumor which was required by our college to further join a competition where our team pirates got the 2nd place in it. The content of this project includes:
+    - Poster which illustrates our full project
+    - Implementing our algorithm using Deep Learning to detect brain tumor in Jupyter Notebook (Accuracy 97%)
+    - Report which describes the full research process
     - Presentation to present our full idea
+
 <hr>
 
 ## Technologies
-> Project Back-end is created with:
-* NumPy  
-* Matplotlib 
-* keras 
-* TensorFlow  
-* PIL  
-* SciPy 
+- NumPy
+- Matplotlib
+- Keras
+- TensorFlow
+- PIL
+- SciPy
+
 <hr>
 
 ## Setup
+
 To run this project, install it locally using pip:
 
-```
-$ cd ../"project_path"
-$ pip install "required_modules"
-```
+Shell
+
+    $ cd ../"project_path"
+    $ jupyter notebook brain-tumor-detection-notebook.ipynb
+
 <hr>
 
 ## Poster
-<a href="Bio_Pirates_Poster.pdf"> Our poster </a>
+
+[Project Poster](assets/DeepTumorInsight_poster.pdf)
 <hr>
 
 ## Notebook
-<a href="brain-tumor-detection-notebook.ipynb"> Our jupyter notebook </a>
+
+[Project Notebook](DeepTumorInsight_notebook.ipynb)
 <hr>
 
 ## Report
-<a href="Math Report final - pirates.pdf"> Our report </a>
+
+[Project Report](assets/DeepTumorInsight_report.pdf)
+
 <hr>
 
 ## Presentation
-<a href="Bio_Pirates Presentation.pptx"> Our presentation </a>
-<hr>
 
-## Launch
-<hr>
+[Project Slides](assets/DeepTumorInsight_slides.pptx)
 
-> <center><a href="https://github.com/mahmoud1yaser/BrainTumorDetection_DL_MathModelling.git">GitHub Repo</a></center>
 <hr>
-
 
 ## Team
-- Mahmoud Salman 
-- Kamel Mohamed 
-- Ibrahim Mohamed 
-- Youssef Shaaban 
-- Youssef Kadry 
-- Dina Khalid
-- Neveen Mohamed
-- Esraa Ali
+Name|
+--- |
+Mahmoud Salman|
+Ibrahim Mohamed|
+Kamel Mohamed|
+Youssef Shaaban|
+Dina Khalid|
+Youssef Kadry|
+Neveen Mohamed|
+Esraa Ali|
+
 <hr>
