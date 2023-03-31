@@ -34,10 +34,6 @@
  
 
 ## Information
-
-- The project Back-end is made using Deep learning (Python).
-General Information
-
 - This project is Mathematical Modeling using PDEs for Detection of Brain Tumor which was required by our college to further join a competition where our team pirates got the 2nd place in it. The content of this project includes:
     - Poster which illustrates our full project
     - Implementing our algorithm using Deep Learning to detect brain tumor in Jupyter Notebook (Accuracy 97%)
